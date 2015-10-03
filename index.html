@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
+
+<div ng-app="collegeApp" ng-controller="homePageController">
+
+    <h1> Title: {{PageTitle}}</h1>
+    <p>Contents:{{contents}}</p>
+    <p>Footer:{{footer}}</p>
+
+</div>
+
+</body>
+
+<script>
+    var app = angular.module('collegeApp', []);
+    app.controller('homePageController', function homePageController($scope){
+        $scope.PageTitle = "Homepage - VTU"
+        $scope.contents = "Homepage contents"
+        $scope.footer = "Homepage - Footer"
+    })
+
+
+
+
+</script>
+
+
+</html>
